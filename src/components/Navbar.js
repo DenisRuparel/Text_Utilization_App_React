@@ -1,4 +1,3 @@
-import React from 'react'
 import '../index.css';
 import './TextForm.js';
 export default function Navbar(props) {

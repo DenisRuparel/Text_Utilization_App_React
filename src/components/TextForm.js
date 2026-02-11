@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 export default function TextForm(props) {
 
     const convertUpperCase = () => {
@@ -62,14 +62,14 @@ export default function TextForm(props) {
                 <div className="mb-3">
                     <textarea className="form-control" id='textarea' value={text} style={{backgroundColor: props.mode==='dark'?'light':'dark'}} onChange={handleOnChange} rows="8"></textarea>
                 </div>
-                <button className="btn btn-outline-primary mx-2" onClick={convertUpperCase}>Convert To UpperCase</button>
-                <button className="btn btn-outline-success mx-2" onClick={convertLowerCase}>Convert To LowerCase</button>
-                <button className="btn btn-outline-primary mx-2" onClick={convertSentanceCase}>Convert To SentanceCase</button>
-                <button className="btn btn-outline-success mx-2" onClick={removePunc}>Remove Punctuation</button>
-                <button className="btn btn-outline-primary mx-2" onClick={newLineRemove}>New Line Remove</button>
-                <button className="btn btn-outline-success mx-2" onClick={extraSpaceRemove}>Extra Space Remove</button>
-                <button className="btn btn-outline-primary mx-2" onClick={copyText}>Copy Text</button>
-                <button className="btn btn-outline-success mx-2 mt-3" onClick={clearText}>Clear Text</button>
+                <button className="btn btn-outline-info mx-2" onClick={convertUpperCase}>Convert To UpperCase</button>
+                <button className="btn btn-outline-warning mx-2" onClick={convertLowerCase}>Convert To LowerCase</button>
+                <button className="btn btn-outline-info mx-2" onClick={convertSentanceCase}>Convert To SentanceCase</button>
+                <button className="btn btn-outline-warning mx-2" onClick={removePunc}>Remove Punctuation</button>
+                <button className="btn btn-outline-info mx-2" onClick={newLineRemove}>New Line Remove</button>
+                <button className="btn btn-outline-warning mx-2" onClick={extraSpaceRemove}>Extra Space Remove</button>
+                <button className="btn btn-outline-info mx-2 mt-3" onClick={copyText}>Copy Text</button>
+                <button className="btn btn-outline-warning mx-2 mt-3" onClick={clearText}>Clear Text</button>
             </div>
             <br />
             <div className="container" style={{color: props.mode==='dark'?'white':'black'}}>

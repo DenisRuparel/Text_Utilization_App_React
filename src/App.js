@@ -16,7 +16,7 @@ function App() {
     })
 
     toast.success(`${message}`,{
-      position: "top-right",
+      position: "top-center",
       autoClose: 4000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -43,11 +43,11 @@ function App() {
 
   return (
     <>
-      <Navbar title="textUtils" mode={mode} toggleMode={toggleMode}/>
+      <Navbar title="textUtils by Denis Ruparel" mode={mode} toggleMode={toggleMode}/>
       <div className="container my-3">
       <ToastContainer 
             alert={alert}
-            position="top-right"
+            position="top-center"
             autoClose={5000}
             hideProgressBar={false}
             newestOnTop={false}
